@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logoSmk.png" type="image/x-icon" />
+    <title>XII-TPK-2</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/jadwalPiket.css" />
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Oswald:wght@200..700&family=Shadows+Into+Light&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Shadows+Into+Light&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Itim&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Shadows+Into+Light&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="https://smkntambakboyo.sch.id/" target="_blank">
+          <img src="../img/smk.png" alt="Logo" width="130" />
+        </a>
+      </div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a id="navHome" href="../index.html">Home</a></li>
+        <li>
+          <a id="navSiswa" href="siswa.html">Daftar Siswa</a>
+        </li>
+        <li><a id="navGuru" href="guru.html">Daftar Guru</a></li>
+        <li><a href="strukturKelas.html">Struktur Kelas</a></li>
+        <li><a href="jadwalPiket.html">Jadwal Piket</a></li>
+        <li><a href="jadwalPelajaran.html">Jadwal Pelajaran</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <div class="jadwal-piket">
+      <h3>↓ Jadwal Piket ↓</h3>
+      <div class="jadwal-container">
+        <div class="jadwal-card">
+          <p>Senin</p>
+          <ul>
+            <li>Asti Rosidah</li>
+            <li>Bismillah Nur Jailani</li>
+            <li>Kaizal Ramdhan Alfian</li>
+            <li>M.Roisul Amin</li>
+            <li>Mohamad Khoirul Anam</li>
+          </ul>
+        </div>
+        <div class="jadwal-card">
+          <p>Selasa</p>
+          <ul>
+            <li>Muhammad Arinal Hikam</li>
+            <li>Muhammad Muchdhor</li>
+            <li>M.Riyan Masyhuri</li>
+            <li>Na'ilul Murodi</li>
+            <li>Nungki Widiyanto</li>
+          </ul>
+        </div>
+        <div class="jadwal-card">
+          <p>Rabu</p>
+          <ul>
+            <li>Rafi Ramadhani</li>
+            <li>Rajif Setiyo Aji</li>
+            <li>Riris Lidya</li>
+            <li>Riski Aditya Pratama</li>
+            <li>Roghib Farda Ardiansyah</li>
+          </ul>
+        </div>
+        <div class="jadwal-card">
+          <p>Kamis</p>
+          <ul>
+            <li>Rohmat</li>
+            <li>Saiin Nasro</li>
+            <li>Tasyah Nur Afida</li>
+            <li>Toni</li>
+            <li>Wahyu Alfiyan Nur Ramadhani</li>
+          </ul>
+        </div>
+        <div class="jadwal-card">
+          <p>Jumat</p>
+          <ul>
+            <li>Yanto</li>
+            <li>Yoga Paramarta</li>
+            <li>Yuni Pratika Dewi</li>
+            <li>Yusuf Ardi Prasetyo</li>
+            <li>Zaenal Ma'ruf</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <footer class="footer">
+      <p class="footer-text">
+        © 2024 SMK Negeri 1 Tambakboyo. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="../js/script.js"></script>
+    <script>
+      if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+        if (window.location.pathname !== "/index.html") {
+          sessionStorage.setItem("redirected", "true");
+          window.location.href = "../index.html";
+        }
+      } else if (sessionStorage.getItem("redirected")) {
+        sessionStorage.removeItem("redirected");
+      }
+    </script>
+  </body>
+</html>

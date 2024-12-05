@@ -1,0 +1,54 @@
+.foto {
+  columns: 300px;
+  padding: 20px 60px 60px 60px;
+  overflow: hidden;
+}
+
+h3 {
+  z-index: 1;
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  font-family: "Teko", serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.foto img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  opacity: 0;
+  animation: slide-in 1s ease-out forwards;
+}
+
+.foto img:nth-child(2n) {
+  animation: slide-in-reverse 1s ease-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-reverse {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+body {
+  background: radial-gradient(ellipse at bottom, #4f5573 0%, #414971 100%);
+}

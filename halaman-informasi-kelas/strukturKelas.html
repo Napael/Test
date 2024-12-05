@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logoSmk.png" type="image/x-icon" />
+    <title>XII-TPK-2</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/strukturKelas.css" />
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Oswald:wght@200..700&family=Shadows+Into+Light&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="https://smkntambakboyo.sch.id/" target="_blank">
+          <img src="../img/smk.png" alt="Logo" width="130" />
+        </a>
+      </div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a id="navHome" href="../index.html">Home</a></li>
+        <li>
+          <a id="navSiswa" href="siswa.html">Daftar Siswa</a>
+        </li>
+        <li><a id="navGuru" href="guru.html">Daftar Guru</a></li>
+        <li><a href="strukturKelas.html">Struktur Kelas</a></li>
+        <li><a href="jadwalPiket.html">Jadwal Piket</a></li>
+        <li><a href="jadwalPelajaran.html">Jadwal Pelajaran</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <!--  -->
+
+    <div class="struktur-kelas">
+      <h3>↓ Struktur Kelas ↓</h3>
+      <div class="struktur-container">
+        <div class="kepala-sekolah-container">
+          <div class="box kepala-sekolah">
+            <img src="../img/Pak Agus.png" alt="Foto" />
+            <div class="text">
+              <div class="name">AGUS SISWANTO, S.Pd., M.Pd.</div>
+              <div class="jabatan">Kepala Sekolah</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="waliKelas-kepalaJurusan-container">
+          <div class="box kepala-jurusan">
+            <img src="../img/Pak Teguh.jpeg" alt="Foto" />
+            <div class="text">
+              <div class="name">TEGUH RAHARJO, S.T</div>
+              <div class="jabatan">Kepala Jurusan</div>
+            </div>
+          </div>
+
+          <div class="box wali-kelas">
+            <img src="../img/Bu Lina.jpeg" alt="Foto" />
+            <div class="text">
+              <div class="name">HERLINAWATI, S.Pd., Gr.</div>
+              <div class="jabatan">Wali Kelas</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ketuaKelas-container">
+          <div class="box ketua-kelas">
+            <img
+              src="../img/rimuru-pfp-with-braided-hair-hrx8f9te7ux66n01.jpg"
+              alt="Foto"
+            />
+            <div class="text">
+              <div class="name">WAHYU ALFIYAN N.R</div>
+              <div class="jabatan">Ketua Kelas</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ketuaKelas-container">
+          <div class="box ketua-kelas">
+            <img
+              src="../img/rimuru-pfp-with-braided-hair-hrx8f9te7ux66n01.jpg"
+              alt="Foto"
+            />
+            <div class="text">
+              <div class="name">SAIIN NASRO</div>
+              <div class="jabatan">Wakil Ketua</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-sekertaris-bendahara">
+          <div class="box sekretaris1">
+            <img
+              src="../img/rimuru-pfp-with-braided-hair-hrx8f9te7ux66n01.jpg"
+              alt="Foto"
+            />
+            <div class="text">
+              <div class="name">TASYA NUR AFRIDA</div>
+              <div class="jabatan">Sekretaris 1</div>
+            </div>
+          </div>
+
+          <div class="box Sekertaris2">
+            <img
+              src="../img/rimuru-pfp-with-braided-hair-hrx8f9te7ux66n01.jpg"
+              alt="Foto"
+            />
+            <div class="text">
+              <div class="name">BISMILLAH NUR JAILANI</div>
+              <div class="jabatan">Bendahara 1</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="siswa-container">
+          <div class="box siswa">
+            <img
+              src="../img/rimuru-pfp-with-braided-hair-hrx8f9te7ux66n01.jpg"
+              alt="Foto"
+            />
+            <div class="text">
+              <div class="name">Seluruh Siswa</div>
+              <div class="jabatan">Anggota Kelas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <footer class="footer">
+      <p class="footer-text">
+        © 2024 SMK Negeri 1 Tambakboyo. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="../js/script.js"></script>
+    <script>
+      if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+        if (window.location.pathname !== "/index.html") {
+          sessionStorage.setItem("redirected", "true");
+          window.location.href = "../index.html";
+        }
+      } else if (sessionStorage.getItem("redirected")) {
+        sessionStorage.removeItem("redirected");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+.jadwal-piket {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 20px;
+  background: radial-gradient(ellipse at bottom, #424c80 0%, #414971 100%);
+}
+
+.jadwal-piket h3 {
+  font-family: "Teko", serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.jadwal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 90px;
+  padding: 20px;
+}
+
+.jadwal-card {
+  width: 280px;
+  height: 380px;
+  background: linear-gradient(145deg, #e4e4e4, #dae1ed);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 128, 255, 0.2);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  color: #414971;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  padding: 15px 10px;
+  border: 3px solid #000000;
+}
+
+.jadwal-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.jadwal-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jadwal-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.jadwal-card li {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #414971;
+  margin-bottom: 8px;
+  width: 250px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  border-bottom: 2px solid #000000;
+}

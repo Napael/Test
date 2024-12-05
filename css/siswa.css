@@ -1,0 +1,110 @@
+.daftar-siswa {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px 20px;
+  width: auto;
+  height: auto;
+  background: radial-gradient(ellipse at bottom, #424c80 0%, #414971 100%);
+}
+
+.daftar-siswa h3 {
+  font-family: "Teko", serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.kartu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+  padding: 20px;
+}
+
+.kartu-siswa {
+  width: 350px;
+  height: 200px;
+  background: linear-gradient(to bottom, #122d4f, #616ab5);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  color: #e5eaf3;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kartu-siswa:hover {
+  outline: 3px solid #e5eaf3;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.header-kartu {
+  background: linear-gradient(to right, #e5eaf3, #ffffff);
+  height: 25%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.logo-sekolah {
+  width: 40px;
+  height: auto;
+}
+
+.judul-header {
+  margin-left: 10px;
+  font-size: 1rem;
+  font-family: Teko, serif;
+  font-weight: 600;
+  color: #142d50;
+}
+
+.foto-profil {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 34px;
+  border: 2px solid #ffffff;
+  margin-top: 20px;
+}
+
+.info-siswa {
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.nama-siswa {
+  margin: 0;
+  font-size: 1.3rem;
+  font-family: Teko, serif;
+  font-weight: 600;
+}
+
+.no-induk,
+.jenis-kelamin {
+  margin: 4px 0;
+  font-size: 1rem;
+  font-family: Teko, serif;
+  font-weight: 500;
+}
+
+.info-sekolah {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 1rem;
+  font-family: Teko, serif;
+  font-weight: 400;
+}

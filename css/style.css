@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: linear-gradient(to bottom, #122d4f, #616ab5);
+  font-size: 1rem;
+  position: relative;
+}
+
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #030423;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav.scrolled ul li a::before {
+  background-color: #ffffff;
+}
+
+nav ul li:hover a::before {
+  width: 100%;
+  left: 0;
+}
+
+.navbar {
+  z-index: 3 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #e5eaf3, #ffffff);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: background-color 0.5s, backdrop-filter 0.5s;
+  height: 40px;
+}
+
+.navbar-logo {
+  margin-left: 15px;
+  filter: drop-shadow(0 0 3px black);
+}
+
+.hamburger {
+  display: none;
+  font-size: 23px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.navbar-menu li {
+  display: inline;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: radial-gradient(ellipse at bottom, #4f5573 0%, #414971 100%);
+  font-size: 16px;
+  transition: color 0.3s ease, font-size 0.3s ease;
+  font-family: "Itim", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.navbar-menu li a:hover {
+  color: #030423;
+}
+
+.navbar.scrolled {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  .navbar-menu li a:hover {
+    color: #ffffff;
+  }
+  .hamburger {
+    color: rgb(255, 255, 255);
+  }
+}
+
+.navbar.scrolled a {
+  color: #d5dff2;
+}
+
+@media (max-width: 1080px) {
+  .navbar.scrolled {
+    .navbar-menu {
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    }
+  }
+
+  .navbar-menu {
+    background: linear-gradient(to right, #e5eaf3, #ffffff);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 59px;
+    right: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: max-height 0.5s ease, transform 0.5s ease;
+    padding: 0 20px;
+  }
+
+  .navbar-menu.active {
+    max-height: 270px;
+    transform: translateY(0);
+    height: 270px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+  }
+
+  .navbar-menu li a {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    text-align: center;
+    filter: none;
+  }
+}
+
+@media (min-width: 1080px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer {
+  display: flex;
+  z-index: 3 !important;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: auto;
+  padding: 0 20px;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+.footer-text {
+  margin: 0;
+  font-family: "Teko", serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #d5dff2;
+}

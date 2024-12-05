@@ -1,0 +1,271 @@
+/* Base Structure */
+.struktur-kelas {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px 20px;
+  background: radial-gradient(ellipse at bottom, #424c80 0%, #414971 100%);
+}
+
+.struktur-kelas h3 {
+  font-family: "Teko", serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.struktur-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 30px 30px 30px;
+}
+
+.box {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 15px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  margin: 20px 0;
+  position: relative;
+  font-family: "Itim", cursive;
+  font-size: 0.9rem;
+  --border-size: 2.5px;
+  --border-angle: 0turn;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      rgb(247, 247, 247),
+      rgb(246, 246, 246) 50%,
+      rgb(244, 244, 244)
+    ),
+    conic-gradient(
+      from var(--border-angle),
+      transparent 40%,
+      #08f,
+      rgb(0, 40, 186)
+    );
+  background-size: calc(100% - (var(--border-size) * 3))
+      calc(100% - (var(--border-size) * 3)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+.box:hover {
+  animation: bg-spin 3s linear infinite;
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+.kepala-sekolah-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.waliKelas-kepalaJurusan-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 100px;
+  margin-top: 20px;
+}
+
+.container-sekertaris-bendahara {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 100px;
+  margin-top: 20px;
+}
+
+.ketuaKelas-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.siswa-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.box .text {
+  margin-left: 30px;
+}
+
+.box img {
+  width: 90px;
+  height: 90px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.text .name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.text .jabatan {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 150px;
+    height: 50px;
+  }
+  .box .text {
+    margin-left: 10px;
+  }
+
+  .box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0;
+  }
+
+  .text .name {
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  .text .jabatan {
+    font-size: 0.6rem;
+    color: #555;
+  }
+
+  .waliKelas-kepalaJurusan-container {
+    margin-top: -20px;
+    gap: 30px;
+  }
+
+  .container-sekertaris-bendahara {
+    margin-top: -20px;
+    gap: 30px;
+  }
+
+  .ketuaKelas-container {
+    margin-top: -20px;
+  }
+
+  .siswa-container {
+    margin-top: -20px;
+  }
+
+  .ketuaKelas-container::after {
+    height: 260px !important;
+  }
+}
+
+.kepala-sekolah-container {
+  position: relative;
+}
+.kepala-sekolah-container::after {
+  content: "";
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  width: 4px;
+  height: 400px;
+  background: linear-gradient(0deg, white, #08f, white);
+  background-size: 100% 300%;
+  animation: animate-line-vertical 4s linear infinite;
+  transform: translateX(-50%);
+  border: 1px solid black;
+}
+
+.ketuaKelas-container {
+  position: relative;
+}
+.ketuaKelas-container::after {
+  content: "";
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  width: 4px;
+  height: 430px;
+  background: linear-gradient(0deg, white, #08f, white);
+  background-size: 100% 300%;
+  animation: animate-line-vertical 4s linear infinite;
+  transform: translateX(-50%);
+  border: 1px solid black;
+}
+
+.container-sekertaris-bendahara {
+  position: relative;
+}
+.container-sekertaris-bendahara::before,
+.container-sekertaris-bendahara::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, white, #08f, white);
+  background-size: 200% 100%;
+  animation: animate-line 4s linear infinite;
+  border: 1px solid black;
+}
+
+.waliKelas-kepalaJurusan-container {
+  position: relative;
+}
+.waliKelas-kepalaJurusan-container::before,
+.waliKelas-kepalaJurusan-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, white, #08f, white);
+  background-size: 200% 100%;
+  animation: animate-line 4s linear infinite;
+  border: 1px solid black;
+}
+
+@keyframes animate-line {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes animate-line-vertical {
+  0% {
+    background-position: 0 200%;
+  }
+  100% {
+    background-position: 0 -200%;
+  }
+}

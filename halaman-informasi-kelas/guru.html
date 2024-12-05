@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logoSmk.png" type="image/x-icon" />
+    <title>XII-TPK-2</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/guru.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Oswald:wght@200..700&family=Shadows+Into+Light&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="https://smkntambakboyo.sch.id/" target="_blank">
+          <img src="../img/smk.png" alt="Logo" width="130" />
+        </a>
+      </div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a id="navHome" href="../index.html">Home</a></li>
+        <li>
+          <a id="navSiswa" href="siswa.html">Daftar Siswa</a>
+        </li>
+        <li><a id="navGuru" href="guru.html">Daftar Guru</a></li>
+        <li><a href="strukturKelas.html">Struktur Kelas</a></li>
+        <li><a href="jadwalPiket.html">Jadwal Piket</a></li>
+        <li><a href="jadwalPelajaran.html">Jadwal Pelajaran</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <!-- DATA GURU -->
+    <section class="dataGuru" id="dataGuru">
+      <h2
+        style="
+          color: white;
+          font-family: Teko, serif;
+          font-size: 1.8rem;
+          color: #ffffff;
+          text-align: center;
+        "
+      >
+        ↓ Daftar Guru Pengajar ↓
+      </h2>
+      <div class="containerGuru">
+        <div
+          class="kartu-id-guru"
+          onclick="btninfo('infoGuru1')"
+          data-aos="zoom-in"
+        >
+          <div class="header-kartu"></div>
+          <div class="foto-guru">
+            <img src="../img/Pak Sofa.jpeg" alt="" />
+          </div>
+          <p style="font-size: 1.2rem">HIDAYATUL MUSOFFA</p>
+          <p style="margin-top: -15px">
+            Mapel : Bahasa Indonesia<br />
+            Gender : Laki-laki
+          </p>
+          <div class="logo">
+            <div class="logo-smk">
+              <img src="../img/logoSmk.png" alt="Logo SMK" />
+            </div>
+            <div class="logo-tpk">
+              <img src="../img/tpklogo.png" width="40" alt="Logo TPK" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="kartu-id-guru"
+          onclick="btninfo('infoGuru2')"
+          data-aos="zoom-in"
+        >
+          <div class="header-kartu"></div>
+          <div class="foto-guru">
+            <img src="../img/Pak Hukam.jpeg" alt="" />
+          </div>
+          <p style="font-size: 1.2rem">MUHAMMAD HUKKAM AZHADI</p>
+          <p style="margin-top: -15px">
+            Mapel : Pendidikan Agama Islam<br />
+            Gender : Laki-laki
+          </p>
+          <div class="logo">
+            <div class="logo-smk">
+              <img src="../img/logoSmk.png" alt="Logo SMK" />
+            </div>
+            <div class="logo-tpk">
+              <img src="../img/tpklogo.png" alt="Logo TPK" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="kartu-id-guru"
+          onclick="btninfo('infoGuru3')"
+          data-aos="zoom-in"
+        >
+          <div class="header-kartu"></div>
+          <div class="foto-guru">
+            <img src="../img/Pak Abdul.jpeg" alt="" />
+          </div>
+          <p style="font-size: 1.2rem">ABDUL MUKTI</p>
+          <p style="margin-top: -15px">
+            Mapel : Pendidikan Pancasila<br />
+            Gender : Laki-laki
+          </p>
+          <div class="logo">
+            <div class="logo-smk">
+              <img src="../img/logoSmk.png" alt="Logo SMK" />
+            </div>
+            <div class="logo-tpk">
+              <img src="../img/tpklogo.png" alt="Logo TPK" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="kartu-id-guru"
+          onclick="btninfo('infoGuru4')"
+          data-aos="zoom-in"
+        >
+          <div class="header-kartu"></div>
+          <div class="foto-guru">
+            <img src="../img/Bu Tika.jpeg" alt="" />
+          </div>
+          <p style="font-size: 1.2rem">PRATIKA AGUSTINA WULANDARI</p>
+          <p style="margin-top: -15px">
+            Mapel : Bahasa Daerah<br />
+            Gender : Perempuan
+          </p>
+          <div class="logo">
+            <div class="logo-smk">
+              <img src="../img/logoSmk.png" alt="Logo SMK" />
+            </div>
+            <div class="logo-tpk">
+              <img src="../img/tpklogo.png" alt="Logo TPK" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="kartu-id-guru"
+          onclick="btninfo('infoGuru5')"
+          data-aos="zoom-in"
+        >
+          <div class="header-kartu"></div>
+          <div class="foto-guru">
+            <img src="../img/Bu Lina.jpeg" alt="" />
+          </div>
+          <p style="font-size: 1.2rem">HERLINAWATI</p>
+          <p style="margin-top: -15px">
+            Mapel : Bahasa Inggris<br />
+            Gender : Perempuan
+          </p>
+          <div class="logo">
+            <div class="logo-smk">
+              <img src="../img/logoSmk.png" alt="Logo SMK" />
+            </div>
+            <div class="logo-tpk">
+              <img src="../img/tpklogo.png" alt="Logo TPK" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="kartu-id-guru"
+          onclick="btninfo('infoGuru6')"
+          data-aos="zoom-in"
+        >
+          <div class="header-kartu"></div>
+          <div class="foto-guru">
+            <img src="../img/Bu Wahyu.jpeg" alt="" />
+          </div>
+          <p style="font-size: 1.2rem">WAHYU TRISNAWATI</p>
+          <p style="margin-top: -15px">
+            Mapel : Matematika<br />
+            Gender : Perempuan
+          </p>
+          <div class="logo">
+            <div class="logo-smk">
+              <img src="../img/logoSmk.png" alt="Logo SMK" />
+            </div>
+            <div class="logo-tpk">
+              <img src="../img/tpklogo.png" alt="Logo TPK" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="kartu-id-guru"
+          onclick="btninfo('infoGuru7')"
+          data-aos="zoom-in"
+        >
+          <div class="header-kartu"></div>
+          <div class="foto-guru">
+            <img src="../img/Bu Ula.jpeg" alt="" />
+          </div>
+          <p style="font-size: 1.2rem">ALHAURA' NABIGHATUL ULA</p>
+          <p style="margin-top: -15px">
+            Mapel : PKK<br />
+            Gender : Perempuan
+          </p>
+          <div class="logo">
+            <div class="logo-smk">
+              <img src="../img/logoSmk.png" alt="Logo SMK" />
+            </div>
+            <div class="logo-tpk">
+              <img src="../img/tpklogo.png" alt="Logo TPK" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="kartu-id-guru"
+          onclick="btninfo('infoGuru8')"
+          data-aos="zoom-in"
+        >
+          <div class="header-kartu"></div>
+          <div class="foto-guru">
+            <img src="../img/Pak Teguh.jpeg" alt="" />
+          </div>
+          <p style="font-size: 1.2rem">TEGUH RAHARJO</p>
+          <p style="margin-top: -15px">
+            Mapel : Teknik Pemesinan Kapal<br />
+            Gender : Laki-laki
+          </p>
+          <div class="logo">
+            <div class="logo-smk">
+              <img src="../img/logoSmk.png" alt="Logo SMK" />
+            </div>
+            <div class="logo-tpk">
+              <img src="../img/tpklogo.png" alt="Logo TPK" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="kartu-id-guru"
+          onclick="btninfo('infoGuru9')"
+          data-aos="zoom-in"
+        >
+          <div class="header-kartu"></div>
+          <div class="foto-guru">
+            <img src="../img/Pak Farid.jpeg" alt="" />
+          </div>
+          <p style="font-size: 1.2rem">FARID NURUL HUDA</p>
+          <p style="margin-top: -15px">
+            Mapel : Bimbingan dan Konseling<br />
+            Gender : Laki-laki
+          </p>
+          <div class="logo">
+            <div class="logo-smk">
+              <img src="../img/logoSmk.png" alt="Logo SMK" />
+            </div>
+            <div class="logo-tpk">
+              <img src="../img/tpklogo.png" alt="Logo TPK" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT INFOGURU -->
+    <div class="infoLengkap" id="infoGuru1" style="display: none">
+      <div class="infoL-box">
+        <h3>HIDAYATUL MUSOFFA</h3>
+        <a>JENIS KELAMIN: Laki-laki</a>
+        <a>NUPTK : 4846769670130062</a>
+        <a>TEMPAT LAHIR : TUBAN</a>
+        <a>TANGGAL LAHIR : 1991-05-24</a>
+        <a>Status Kepegawaian : Honor Daerah TK.I Provinsi</a>
+        <button class="close-button" onclick="btninfo('infoGuru1')">
+          Tutup
+        </button>
+      </div>
+    </div>
+
+    <div class="infoLengkap" id="infoGuru2" style="display: none">
+      <div class="infoL-box">
+        <h3>MUHAMMAD HUKKAM AZHADI</h3>
+        <a>JENIS KELAMIN: Laki-laki</a>
+        <a>NUPTK : 6656761662130152</a>
+        <a>TEMPAT LAHIR : TUBAN</a>
+        <a>TANGGAL LAHIR : 1983-03-24</a>
+        <a>NIP : 198303242023211009</a>
+        <a>Status Kepegawaian : PPPK</a>
+        <button class="close-button" onclick="btninfo('infoGuru2')">
+          Tutup
+        </button>
+      </div>
+    </div>
+
+    <div class="infoLengkap" id="infoGuru3" style="display: none">
+      <div class="infoL-box">
+        <h3>ABDUL MUKTI</h3>
+        <a>JENIS KELAMIN: Laki-laki</a>
+        <a>NUPTK : 3447752654200002</a>
+        <a>TEMPAT LAHIR : REMBANG</a>
+        <a>TANGGAL LAHIR : 1974-01-15</a>
+        <a>Status Kepegawaian : PPPK</a>
+        <button class="close-button" onclick="btninfo('infoGuru3')">
+          Tutup
+        </button>
+      </div>
+    </div>
+
+    <div class="infoLengkap" id="infoGuru4" style="display: none">
+      <div class="infoL-box">
+        <h3>PRATIKA AGUSTINA WULANDARI</h3>
+        <a>JENIS KELAMIN: Perempuan</a>
+        <a>NUPTK : 2146771672130033</a>
+        <a>TEMPAT LAHIR : TULUNGAGUNG</a>
+        <a>TANGGAL LAHIR : 1993-08-14</a>
+        <a>Status Kepegawaian : Honor Daerah TK.I Provinsi</a>
+        <button class="close-button" onclick="btninfo('infoGuru4')">
+          Tutup
+        </button>
+      </div>
+    </div>
+
+    <div class="infoLengkap" id="infoGuru5" style="display: none">
+      <div class="infoL-box">
+        <h3>HERLINAWATI</h3>
+        <a>JENIS KELAMIN: Perempuan</a>
+        <a>NUPTK : 0447762663210083</a>
+        <a>TEMPAT LAHIR : TUBAN</a>
+        <a>TANGGAL LAHIR : 1984-11-15</a>
+        <a>NIP : 198411152022212033</a>
+        <a>Status Kepegawaian : PPPK</a>
+        <button class="close-button" onclick="btninfo('infoGuru5')">
+          Tutup
+        </button>
+      </div>
+    </div>
+
+    <div class="infoLengkap" id="infoGuru6" style="display: none">
+      <div class="infoL-box">
+        <h3>WAHYU TRISNAWATI</h3>
+        <a>JENIS KELAMIN: Perempuan</a>
+        <a>NUPTK : 3047772673230193</a>
+        <a>TEMPAT LAHIR : TUBAN</a>
+        <a>TANGGAL LAHIR : 1994-07-15</a>
+        <a>NIP : 199407152022212017</a>
+        <a>Status Kepegawaian : PPPK</a>
+        <button class="close-button" onclick="btninfo('infoGuru6')">
+          Tutup
+        </button>
+      </div>
+    </div>
+
+    <div class="infoLengkap" id="infoGuru7" style="display: none">
+      <div class="infoL-box">
+        <h3>ALHAURA' NABIGHATUL ULA</h3>
+        <a>JENIS KELAMIN: Perempuan</a>
+        <a>NUPTK : 5438761663220003</a>
+        <a>TEMPAT LAHIR : MALANG</a>
+        <a>TANGGAL LAHIR : 1983-11-06</a>
+        <a>NIP : 198311062011012014</a>
+        <a>Status Kepegawaian : PNS</a>
+        <button class="close-button" onclick="btninfo('infoGuru7')">
+          Tutup
+        </button>
+      </div>
+    </div>
+
+    <div class="infoLengkap" id="infoGuru8" style="display: none">
+      <div class="infoL-box">
+        <h3>TEGUH RAHARJO</h3>
+        <a>JENIS KELAMIN: Laki-laki</a>
+        <a>NUPTK : 0547761662130192</a>
+        <a>TEMPAT LAHIR : TUBAN</a>
+        <a>TANGGAL LAHIR : 1983-02-15</a>
+        <a>NIP : 198302152022211019</a>
+        <a>Status Kepegawaian : PPPK</a>
+        <button class="close-button" onclick="btninfo('infoGuru8')">
+          Tutup
+        </button>
+      </div>
+    </div>
+
+    <div class="infoLengkap" id="infoGuru9" style="display: none">
+      <div class="infoL-box">
+        <h3>FARID NURUL HUDA</h3>
+        <a>JENIS KELAMIN: Laki-laki</a>
+        <a>NUPTK : 0836764665130302</a>
+        <a>TEMPAT LAHIR : TUBAN</a>
+        <a>TANGGAL LAHIR : 1986-05-04</a>
+        <a>NIP : 198605042022211020</a>
+        <a>Status Kepegawaian : PPPK</a>
+        <button class="close-button" onclick="btninfo('infoGuru9')">
+          Tutup
+        </button>
+      </div>
+    </div>
+
+    <!--  -->
+    <footer class="footer">
+      <p class="footer-text">
+        © 2024 SMK Negeri 1 Tambakboyo. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- DETAIL -->
+    <!-- JS -->
+    <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+        if (window.location.pathname !== "/index.html") {
+          sessionStorage.setItem("redirected", "true");
+          window.location.href = "../index.html";
+        }
+      } else if (sessionStorage.getItem("redirected")) {
+        sessionStorage.removeItem("redirected");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+section.dataGuru {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 20px;
+  width: auto;
+  height: auto;
+  background: radial-gradient(ellipse at bottom, #4f5573 0%, #414971 100%);
+}
+
+.containerGuru {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+  padding: 20px;
+}
+
+.kartu-id-guru {
+  width: 230px;
+  height: auto;
+  background: linear-gradient(to bottom, #122d4f, #616ab5);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e5eaf3;
+}
+
+.kartu-id-guru:hover {
+  outline: 3px solid #e5eaf3;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.header-kartu {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to right, #e5eaf3, #ffffff);
+  border-radius: 8px 8px 0 0;
+}
+
+.foto-guru {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  outline: 3px solid #e5eaf3;
+  overflow: hidden;
+  margin-top: -70px;
+}
+
+.foto-guru img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.kartu-id-guru p {
+  text-align: center;
+  color: white !important;
+  font-family: Teko, serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  margin-bottom: 20px;
+}
+
+.logo-smk img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-tpk img {
+  background-color: white;
+  width: 60px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  outline: 3px solid #ffffff;
+}
+
+.infoLengkap {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+.infoL-box {
+  position: relative;
+  place-content: center;
+  place-items: center;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  --border-size: 2.5px;
+  --border-angle: 0turn;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      rgb(247, 247, 247),
+      rgb(246, 246, 246) 50%,
+      rgb(244, 244, 244)
+    ),
+    conic-gradient(
+      from var(--border-angle),
+      transparent 40%,
+      rgb(40, 40, 40),
+      rgb(0, 0, 0)
+    );
+  background-size: calc(100% - (var(--border-size) * 3))
+      calc(100% - (var(--border-size) * 3)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: bg-spin 3s linear infinite;
+  animation: bg-spin 3s linear infinite;
+}
+
+@-webkit-keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.infoL-box:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+.infoL-box h3 {
+  color: #000000;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.infoL-box a {
+  color: #000000;
+}
+
+.close-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #5790cd;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 40px;
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.close-button:hover {
+  background-color: #375d85;
+}
